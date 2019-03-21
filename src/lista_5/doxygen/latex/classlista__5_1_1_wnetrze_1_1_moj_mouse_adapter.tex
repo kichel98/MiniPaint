@@ -1,0 +1,153 @@
+\hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter}{}\section{lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter Class Reference}
+\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter}\index{lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter@{lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter}}
+Inheritance diagram for lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a4ef4404b4f86ad51e68805d24d8c77b2}{mouse\+Pressed}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a37c0d26aa18789ec52ba5acc80251de4}{mouse\+Dragged}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a1835ceb6a8d4d0519e1473ae586f73cc}{mouse\+Clicked}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a782d984136df2ccfa45c7968931b6eff}{mouse\+Released}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a49b07d26c2eb16d94ec11104f9d60779}{mouse\+Wheel\+Moved}} (Mouse\+Wheel\+Event e)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_acaa74559dde8d1028b6cee91e91d5d20}{tworz\+Menu}} (Mouse\+Event e)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacelista__5_1_1_figura}{Figura}} \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a21bbd36a0f45068c966e26c532b2421c}{figura\+Rys}}
+\item 
+\mbox{\hyperlink{interfacelista__5_1_1_figura}{Figura}} \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a99de9fbdf459dc4783c71017a73cae3a}{figura\+Przes}}
+\item 
+Point \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a54478d4d410971228cd0821c48645193}{przesuwanie}}
+\item 
+boolean \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a2ddea923bcec57d12727dbc5bf7c2e05}{czy\+Wewnatrz}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Obsługuje wszystkie zdarzenia związane z myszką. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a1835ceb6a8d4d0519e1473ae586f73cc}\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a1835ceb6a8d4d0519e1473ae586f73cc}} 
+\index{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}!mouse\+Clicked@{mouse\+Clicked}}
+\index{mouse\+Clicked@{mouse\+Clicked}!lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}}
+\subsubsection{\texorpdfstring{mouse\+Clicked()}{mouseClicked()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter.\+mouse\+Clicked (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+W trybie tworzenia tworzy wielokąt. W trybie edycji uruchamia metodę służącą do tworzenia menu. Najpierw wywołuje się \mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a782d984136df2ccfa45c7968931b6eff}{mouse\+Released}}, następnie
+\begin{DoxyCode}
+\mbox{\hyperlink{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a1835ceb6a8d4d0519e1473ae586f73cc}{mouseClicked}} 
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em e} & zdarzenie związane z kliknięciem przycisku myszy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a37c0d26aa18789ec52ba5acc80251de4}\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a37c0d26aa18789ec52ba5acc80251de4}} 
+\index{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}!mouse\+Dragged@{mouse\+Dragged}}
+\index{mouse\+Dragged@{mouse\+Dragged}!lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}}
+\subsubsection{\texorpdfstring{mouse\+Dragged()}{mouseDragged()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter.\+mouse\+Dragged (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+W trybie tworzenia pozwala rozszerzać figurę, w trybie edycji przesuwa ją i uruchamia wypisywanie danych w \mbox{\hyperlink{classlista__5_1_1_stopka_a8e8ef21758defd5b137e609b00d2f59e}{Stopka\#dane}}. 
+\begin{DoxyParams}{Parameters}
+{\em e} & zdarzenie związane z przesunięciem myszy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a4ef4404b4f86ad51e68805d24d8c77b2}\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a4ef4404b4f86ad51e68805d24d8c77b2}} 
+\index{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}!mouse\+Pressed@{mouse\+Pressed}}
+\index{mouse\+Pressed@{mouse\+Pressed}!lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}}
+\subsubsection{\texorpdfstring{mouse\+Pressed()}{mousePressed()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter.\+mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+W trybie tworzenia tworzy koła i prostokąty, w trybie edycji przygotowuje przesuwanie. 
+\begin{DoxyParams}{Parameters}
+{\em e} & zdarzenie związane z wciśnięciem myszy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a782d984136df2ccfa45c7968931b6eff}\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a782d984136df2ccfa45c7968931b6eff}} 
+\index{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}!mouse\+Released@{mouse\+Released}}
+\index{mouse\+Released@{mouse\+Released}!lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}}
+\subsubsection{\texorpdfstring{mouse\+Released()}{mouseReleased()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter.\+mouse\+Released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+W trybie tworzenia sprawia, że przyciski się odklikują lub blokują, by nie doszło do konfliktów. W trybie edycji tworzy menu. 
+\begin{DoxyParams}{Parameters}
+{\em e} & zdarzenie związane ze zwolnieniem przycisku myszy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a49b07d26c2eb16d94ec11104f9d60779}\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a49b07d26c2eb16d94ec11104f9d60779}} 
+\index{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}!mouse\+Wheel\+Moved@{mouse\+Wheel\+Moved}}
+\index{mouse\+Wheel\+Moved@{mouse\+Wheel\+Moved}!lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}}
+\subsubsection{\texorpdfstring{mouse\+Wheel\+Moved()}{mouseWheelMoved()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter.\+mouse\+Wheel\+Moved (\begin{DoxyParamCaption}\item[{Mouse\+Wheel\+Event}]{e }\end{DoxyParamCaption})}
+
+Dla każdej figury, która zawiera punkt, w którym obecnie znajduje się przycisk myszy, wywołuje metodę \mbox{\hyperlink{interfacelista__5_1_1_figura_a6813d7ac31e5118bcb34b9b29868ce5f}{Figura\#zwieksz(int)}} 
+\begin{DoxyParams}{Parameters}
+{\em e} & zdarzenie związane z poruszeniem scrolla \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_acaa74559dde8d1028b6cee91e91d5d20}\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_acaa74559dde8d1028b6cee91e91d5d20}} 
+\index{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}!tworz\+Menu@{tworz\+Menu}}
+\index{tworz\+Menu@{tworz\+Menu}!lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}}
+\subsubsection{\texorpdfstring{tworz\+Menu()}{tworzMenu()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter.\+tworz\+Menu (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Sprawdza, czy należy stworzyć menu, jeśli tak -\/ robi to. 
+\begin{DoxyParams}{Parameters}
+{\em e} & zdarzenie związane z kliknięciem na terenie panelu \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a2ddea923bcec57d12727dbc5bf7c2e05}\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a2ddea923bcec57d12727dbc5bf7c2e05}} 
+\index{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}!czy\+Wewnatrz@{czy\+Wewnatrz}}
+\index{czy\+Wewnatrz@{czy\+Wewnatrz}!lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}}
+\subsubsection{\texorpdfstring{czy\+Wewnatrz}{czyWewnatrz}}
+{\footnotesize\ttfamily boolean lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter.\+czy\+Wewnatrz = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{true} 
+\end{DoxyCode}
+ -\/ jeśli kliknięta została choć jedna figura,
+\begin{DoxyCode}
+\textcolor{keyword}{false} 
+\end{DoxyCode}
+ -\/ jeśli kliknięta została pusta przestrzeń \mbox{\Hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a99de9fbdf459dc4783c71017a73cae3a}\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a99de9fbdf459dc4783c71017a73cae3a}} 
+\index{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}!figura\+Przes@{figura\+Przes}}
+\index{figura\+Przes@{figura\+Przes}!lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}}
+\subsubsection{\texorpdfstring{figura\+Przes}{figuraPrzes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacelista__5_1_1_figura}{Figura}} lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter.\+figura\+Przes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{interfacelista__5_1_1_figura}{Figura}}, która jest aktualnie przesuwana. Pole inicjalizowane przy wciśnięciu myszy, wykorzystywane przy przeciągnięciu (przesuwaniu figury). \mbox{\Hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a21bbd36a0f45068c966e26c532b2421c}\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a21bbd36a0f45068c966e26c532b2421c}} 
+\index{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}!figura\+Rys@{figura\+Rys}}
+\index{figura\+Rys@{figura\+Rys}!lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}}
+\subsubsection{\texorpdfstring{figura\+Rys}{figuraRys}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacelista__5_1_1_figura}{Figura}} lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter.\+figura\+Rys\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{interfacelista__5_1_1_figura}{Figura}}, która jest aktualnie rysowana. Pole inicjalizowane przy wciśnięciu myszy, wykorzystywane przy przeciągnięciu(tworzeniu figury). \mbox{\Hypertarget{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a54478d4d410971228cd0821c48645193}\label{classlista__5_1_1_wnetrze_1_1_moj_mouse_adapter_a54478d4d410971228cd0821c48645193}} 
+\index{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}!przesuwanie@{przesuwanie}}
+\index{przesuwanie@{przesuwanie}!lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter@{lista\+\_\+5\+::\+Wnetrze\+::\+Moj\+Mouse\+Adapter}}
+\subsubsection{\texorpdfstring{przesuwanie}{przesuwanie}}
+{\footnotesize\ttfamily Point lista\+\_\+5.\+Wnetrze.\+Moj\+Mouse\+Adapter.\+przesuwanie\hspace{0.3cm}{\ttfamily [private]}}
+
+Punkt, w którym znajduje się kursor myszy podczas przesuwania figury. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lista\+\_\+5/\mbox{\hyperlink{_wnetrze_8java}{Wnetrze.\+java}}\end{DoxyCompactItemize}

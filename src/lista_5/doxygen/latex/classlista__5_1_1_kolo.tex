@@ -1,0 +1,263 @@
+\hypertarget{classlista__5_1_1_kolo}{}\section{lista\+\_\+5.\+Kolo Class Reference}
+\label{classlista__5_1_1_kolo}\index{lista\+\_\+5.\+Kolo@{lista\+\_\+5.\+Kolo}}
+Inheritance diagram for lista\+\_\+5.\+Kolo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classlista__5_1_1_kolo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlista__5_1_1_kolo_abbb4dd96b93d0ea773221a321e4af943}{Kolo}} (Point d)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_kolo_acf743c21951288b8794d613665048610}{rysuj}} (Point zmienny)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_kolo_ab984e23d3e45dd5a63dfccf6aeaae01a}{przesun}} (int dx, int dy)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_kolo_a045124cf2c42238baba9ba097c2f5af2}{zwieksz}} (int zwiekszenie)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_kolo_ad4c6dbc8f29699d8753272098719186e}{ustaw\+Z\+Odczytu}} (String\mbox{[}$\,$\mbox{]} argumenty)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_kolo_a9b453810cf6823d1f2549f85419aa5a7}{wypisz\+Dane}} ()
+\item 
+String \mbox{\hyperlink{classlista__5_1_1_kolo_ab812bc5ce875bf87c7c4268d4f1c8aa2}{zapisz\+Dane}} ()
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_kolo_af4a5e91767dcc103808fb63f39b7404a}{zmien\+Kolor}} (Graphics2D g2d, Color \mbox{\hyperlink{classlista__5_1_1_kolo_ae42f8858e1a2278cc04b3190a2ee9fcb}{kolor}})
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_kolo_a97e188acce92c4ca26f1e5483370b00f}{ustaw\+Kolor}} (Graphics2D g2d)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Point \mbox{\hyperlink{classlista__5_1_1_kolo_a4ec5879d3ec849a75bcb1690ed2a0c18}{min}} (Point \mbox{\hyperlink{classlista__5_1_1_kolo_a6deef87b266a0c6c98fc920af90eb81a}{wyjsciowy}}, Point zmienny)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Point \mbox{\hyperlink{classlista__5_1_1_kolo_a6deef87b266a0c6c98fc920af90eb81a}{wyjsciowy}}
+\item 
+Color \mbox{\hyperlink{classlista__5_1_1_kolo_ae42f8858e1a2278cc04b3190a2ee9fcb}{kolor}} = Color.\+G\+R\+AY
+\item 
+final int \mbox{\hyperlink{classlista__5_1_1_kolo_aed784d027c521026966005272339b054}{min\+\_\+width}} = 20
+\item 
+final int \mbox{\hyperlink{classlista__5_1_1_kolo_a47a917d7de6905904717534ccd188037}{min\+\_\+height}} = 20
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa reprezentująca koło. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacelista__5_1_1_figura}{Figura}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_kolo_abbb4dd96b93d0ea773221a321e4af943}\label{classlista__5_1_1_kolo_abbb4dd96b93d0ea773221a321e4af943}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!Kolo@{Kolo}}
+\index{Kolo@{Kolo}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{Kolo()}{Kolo()}}
+{\footnotesize\ttfamily lista\+\_\+5.\+Kolo.\+Kolo (\begin{DoxyParamCaption}\item[{Point}]{d }\end{DoxyParamCaption})}
+
+Tworzy \mbox{\hyperlink{classlista__5_1_1_kolo}{Kolo}}, ustalając współrzędne punktu wyjsciowego. 
+\begin{DoxyParams}{Parameters}
+{\em d} & punkt wyjściowy \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classlista__5_1_1_kolo_a6deef87b266a0c6c98fc920af90eb81a}{wyjsciowy}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_kolo_a4ec5879d3ec849a75bcb1690ed2a0c18}\label{classlista__5_1_1_kolo_a4ec5879d3ec849a75bcb1690ed2a0c18}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!min@{min}}
+\index{min@{min}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily Point lista\+\_\+5.\+Kolo.\+min (\begin{DoxyParamCaption}\item[{Point}]{wyjsciowy,  }\item[{Point}]{zmienny }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Podaje nam punkt, który powinien być prawym dolnym rogiem tak, aby figura była kołem, a nie elipsą. 
+\begin{DoxyParams}{Parameters}
+{\em wyjsciowy} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlista__5_1_1_kolo_ab984e23d3e45dd5a63dfccf6aeaae01a}\label{classlista__5_1_1_kolo_ab984e23d3e45dd5a63dfccf6aeaae01a}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!przesun@{przesun}}
+\index{przesun@{przesun}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{przesun()}{przesun()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Kolo.\+przesun (\begin{DoxyParamCaption}\item[{int}]{dx,  }\item[{int}]{dy }\end{DoxyParamCaption})}
+
+Zmienia położenie figury. 
+\begin{DoxyParams}{Parameters}
+{\em dx} & zmiana położenia względem osi x, o którą należy przesunąć figurę \\
+\hline
+{\em dy} & zmiana położenia względem osi y, o którą należy przesunąć figurę\\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a72f085618cf604e8b1632ea733043861}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_kolo_acf743c21951288b8794d613665048610}\label{classlista__5_1_1_kolo_acf743c21951288b8794d613665048610}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!rysuj@{rysuj}}
+\index{rysuj@{rysuj}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{rysuj()}{rysuj()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Kolo.\+rysuj (\begin{DoxyParamCaption}\item[{Point}]{zmienny }\end{DoxyParamCaption})}
+
+Zmienia właściwości figury podczas jej tworzenia i rysowania; 
+\begin{DoxyParams}{Parameters}
+{\em d} & nowy
+\begin{DoxyCode}
+Point 
+\end{DoxyCode}
+ , który zmienia kształt figury\\
+\hline
+\end{DoxyParams}
+ 
+\begin{DoxyParams}{Parameters}
+{\em zmienny} & prawy dolny róg prostokąta \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a1b238957bac675c57febc970067dfd6d}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_kolo_a97e188acce92c4ca26f1e5483370b00f}\label{classlista__5_1_1_kolo_a97e188acce92c4ca26f1e5483370b00f}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!ustaw\+Kolor@{ustaw\+Kolor}}
+\index{ustaw\+Kolor@{ustaw\+Kolor}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{ustaw\+Kolor()}{ustawKolor()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Kolo.\+ustaw\+Kolor (\begin{DoxyParamCaption}\item[{Graphics2D}]{g2d }\end{DoxyParamCaption})}
+
+Zmienia kolor grafiki na ten, który jest przechowywane w polu kolor. 
+\begin{DoxyParams}{Parameters}
+{\em g2d} & grafika używana w \mbox{\hyperlink{classlista__5_1_1_wnetrze_aa8676192e150a17230d72de122744a47}{Wnetrze\#paint\+Component}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacelista__5_1_1_figura_aeb0982dc44348dd1fde9266d9d476ed0}{zmien\+Kolor}}
+\end{DoxySeeAlso}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a3cc13bf7229b288d743be7903b3b61a4}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_kolo_ad4c6dbc8f29699d8753272098719186e}\label{classlista__5_1_1_kolo_ad4c6dbc8f29699d8753272098719186e}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!ustaw\+Z\+Odczytu@{ustaw\+Z\+Odczytu}}
+\index{ustaw\+Z\+Odczytu@{ustaw\+Z\+Odczytu}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{ustaw\+Z\+Odczytu()}{ustawZOdczytu()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Kolo.\+ustaw\+Z\+Odczytu (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argumenty }\end{DoxyParamCaption})}
+
+Ustawia całą figurę korzystając z danych z pliku. 
+\begin{DoxyParams}{Parameters}
+{\em argumenty} & tablica danych z odczytu, zawiera informacje determinujące figurę\\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a75b72b51014348d839e1f2b81525f264}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_kolo_a9b453810cf6823d1f2549f85419aa5a7}\label{classlista__5_1_1_kolo_a9b453810cf6823d1f2549f85419aa5a7}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!wypisz\+Dane@{wypisz\+Dane}}
+\index{wypisz\+Dane@{wypisz\+Dane}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{wypisz\+Dane()}{wypiszDane()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Kolo.\+wypisz\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Wypisuje dane związane z figurą w \mbox{\hyperlink{classlista__5_1_1_stopka_a8e8ef21758defd5b137e609b00d2f59e}{Stopka\#dane}} 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_aaddd90c61fd1632655cb031efafe1a7d}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_kolo_ab812bc5ce875bf87c7c4268d4f1c8aa2}\label{classlista__5_1_1_kolo_ab812bc5ce875bf87c7c4268d4f1c8aa2}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!zapisz\+Dane@{zapisz\+Dane}}
+\index{zapisz\+Dane@{zapisz\+Dane}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{zapisz\+Dane()}{zapiszDane()}}
+{\footnotesize\ttfamily String lista\+\_\+5.\+Kolo.\+zapisz\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Przygotowuje informacje o figurze do zapisania. \begin{DoxyReturn}{Returns}
+linia, która zostanie zapisana w pliku
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a9d60d64b495755a3e48a3eee549a728d}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_kolo_af4a5e91767dcc103808fb63f39b7404a}\label{classlista__5_1_1_kolo_af4a5e91767dcc103808fb63f39b7404a}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!zmien\+Kolor@{zmien\+Kolor}}
+\index{zmien\+Kolor@{zmien\+Kolor}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{zmien\+Kolor()}{zmienKolor()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Kolo.\+zmien\+Kolor (\begin{DoxyParamCaption}\item[{Graphics2D}]{g2d,  }\item[{Color}]{kolor }\end{DoxyParamCaption})}
+
+Aktualizuje pole kolor obecne w każdej figurze. 
+\begin{DoxyParams}{Parameters}
+{\em g2d} & grafika używana w \mbox{\hyperlink{classlista__5_1_1_wnetrze_aa8676192e150a17230d72de122744a47}{Wnetrze\#paint\+Component}} \\
+\hline
+{\em kolor} & pożądany kolor \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacelista__5_1_1_figura_a3cc13bf7229b288d743be7903b3b61a4}{ustaw\+Kolor}}
+\end{DoxySeeAlso}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_aeb0982dc44348dd1fde9266d9d476ed0}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_kolo_a045124cf2c42238baba9ba097c2f5af2}\label{classlista__5_1_1_kolo_a045124cf2c42238baba9ba097c2f5af2}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!zwieksz@{zwieksz}}
+\index{zwieksz@{zwieksz}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{zwieksz()}{zwieksz()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Kolo.\+zwieksz (\begin{DoxyParamCaption}\item[{int}]{zwiekszenie }\end{DoxyParamCaption})}
+
+Powiększa rozmiary figury. 
+\begin{DoxyParams}{Parameters}
+{\em zwiekszenie} & wartość, o którą należy zwiększyć figurę przy skalowaniu\\
+\hline
+\end{DoxyParams}
+, pamiętając o wartościach minimalnych. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classlista__5_1_1_kolo_aed784d027c521026966005272339b054}{min\+\_\+width}} 
+
+\mbox{\hyperlink{classlista__5_1_1_kolo_a47a917d7de6905904717534ccd188037}{min\+\_\+height}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a6813d7ac31e5118bcb34b9b29868ce5f}{lista\+\_\+5.\+Figura}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_kolo_ae42f8858e1a2278cc04b3190a2ee9fcb}\label{classlista__5_1_1_kolo_ae42f8858e1a2278cc04b3190a2ee9fcb}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!kolor@{kolor}}
+\index{kolor@{kolor}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{kolor}{kolor}}
+{\footnotesize\ttfamily Color lista\+\_\+5.\+Kolo.\+kolor = Color.\+G\+R\+AY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+Color 
+\end{DoxyCode}
+ , domyślnie ustawiony na
+\begin{DoxyCode}
+Color.GRAY 
+\end{DoxyCode}
+ \mbox{\Hypertarget{classlista__5_1_1_kolo_a47a917d7de6905904717534ccd188037}\label{classlista__5_1_1_kolo_a47a917d7de6905904717534ccd188037}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!min\+\_\+height@{min\+\_\+height}}
+\index{min\+\_\+height@{min\+\_\+height}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{min\+\_\+height}{min\_height}}
+{\footnotesize\ttfamily final int lista\+\_\+5.\+Kolo.\+min\+\_\+height = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+Minimalna wysokość, która jest nieprzekraczalna przy zmniejszaniu. \mbox{\Hypertarget{classlista__5_1_1_kolo_aed784d027c521026966005272339b054}\label{classlista__5_1_1_kolo_aed784d027c521026966005272339b054}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!min\+\_\+width@{min\+\_\+width}}
+\index{min\+\_\+width@{min\+\_\+width}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{min\+\_\+width}{min\_width}}
+{\footnotesize\ttfamily final int lista\+\_\+5.\+Kolo.\+min\+\_\+width = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+Minimalna szerokość, która jest nieprzekraczalna przy zmniejszaniu. \mbox{\Hypertarget{classlista__5_1_1_kolo_a6deef87b266a0c6c98fc920af90eb81a}\label{classlista__5_1_1_kolo_a6deef87b266a0c6c98fc920af90eb81a}} 
+\index{lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}!wyjsciowy@{wyjsciowy}}
+\index{wyjsciowy@{wyjsciowy}!lista\+\_\+5\+::\+Kolo@{lista\+\_\+5\+::\+Kolo}}
+\subsubsection{\texorpdfstring{wyjsciowy}{wyjsciowy}}
+{\footnotesize\ttfamily Point lista\+\_\+5.\+Kolo.\+wyjsciowy\hspace{0.3cm}{\ttfamily [private]}}
+
+wyjsciowy
+\begin{DoxyCode}
+Point 
+\end{DoxyCode}
+ , lewy górny róg okalającego prostokąta, niezmienny przy rysowaniu 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lista\+\_\+5/\mbox{\hyperlink{_kolo_8java}{Kolo.\+java}}\end{DoxyCompactItemize}

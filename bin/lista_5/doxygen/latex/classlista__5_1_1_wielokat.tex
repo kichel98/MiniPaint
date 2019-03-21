@@ -1,0 +1,271 @@
+\hypertarget{classlista__5_1_1_wielokat}{}\section{lista\+\_\+5.\+Wielokat Class Reference}
+\label{classlista__5_1_1_wielokat}\index{lista\+\_\+5.\+Wielokat@{lista\+\_\+5.\+Wielokat}}
+Inheritance diagram for lista\+\_\+5.\+Wielokat\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classlista__5_1_1_wielokat}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlista__5_1_1_wielokat_a902f38459eb1935a604537d621f5ca6b}{Wielokat}} (Point d)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wielokat_aca4b29bcec579f442ac566ec3be96d84}{rysuj}} (Point d)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wielokat_a565dc0340d5329d74e5f1f7d0eed1049}{przesun}} (int dx, int dy)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wielokat_ad1df79cd3736bb0fcf3ba2252409f3f8}{wypisz\+Dane}} ()
+\item 
+String \mbox{\hyperlink{classlista__5_1_1_wielokat_a6391ebe6bc42d42b6bd3041b1a6bd7bd}{zapisz\+Dane}} ()
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wielokat_ae863735ff7b742c4703bc142455d34ce}{zmien\+Kolor}} (Graphics2D g2d, Color \mbox{\hyperlink{classlista__5_1_1_wielokat_a6804efa88b78068f50c71ba760dcccc5}{kolor}})
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wielokat_a0c33c8213f6796d16aac592f2a961768}{ustaw\+Kolor}} (Graphics2D g2d)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wielokat_a8427c86e5be650cbece5464eee1ac053}{ustaw\+Z\+Odczytu}} (String\mbox{[}$\,$\mbox{]} argumenty)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wielokat_a17cfc98331e2a135886070a4094ac0e6}{zwieksz}} (int zwiekszenie)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_wielokat_ab8e8d6236a7e73b426c6504af3b59f5f}{napraw\+Bounds}} (int xpoints\mbox{[}$\,$\mbox{]}, int ypoints\mbox{[}$\,$\mbox{]}, int npoints)
+\item 
+Point2\+D.\+Double \mbox{\hyperlink{classlista__5_1_1_wielokat_a8498454fc73a25ba038d48e04bb1e8c0}{srednia\+Point}} (int xpoints\mbox{[}$\,$\mbox{]}, int ypoints\mbox{[}$\,$\mbox{]}, int npoints)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{\hyperlink{classlista__5_1_1_wielokat_a6804efa88b78068f50c71ba760dcccc5}{kolor}} = Color.\+C\+Y\+AN
+\item 
+final int \mbox{\hyperlink{classlista__5_1_1_wielokat_a362cfa49edf4875e534bb1f95a59e7af}{min\+\_\+width}} = 70
+\item 
+final int \mbox{\hyperlink{classlista__5_1_1_wielokat_a0aa7a67f7c10f26e3bf9f4444e5ecb65}{min\+\_\+height}} = 70
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa reprezentująca wielokąt. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacelista__5_1_1_figura}{Figura}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_a902f38459eb1935a604537d621f5ca6b}\label{classlista__5_1_1_wielokat_a902f38459eb1935a604537d621f5ca6b}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!Wielokat@{Wielokat}}
+\index{Wielokat@{Wielokat}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{Wielokat()}{Wielokat()}}
+{\footnotesize\ttfamily lista\+\_\+5.\+Wielokat.\+Wielokat (\begin{DoxyParamCaption}\item[{Point}]{d }\end{DoxyParamCaption})}
+
+Tworzy \mbox{\hyperlink{classlista__5_1_1_wielokat}{Wielokat}}, ustalając współrzędne pierwszego punktu oraz aktualizując prostokąt okalający. 
+\begin{DoxyParams}{Parameters}
+{\em d} & pierwszy punkt \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_ab8e8d6236a7e73b426c6504af3b59f5f}\label{classlista__5_1_1_wielokat_ab8e8d6236a7e73b426c6504af3b59f5f}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!napraw\+Bounds@{napraw\+Bounds}}
+\index{napraw\+Bounds@{napraw\+Bounds}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{napraw\+Bounds()}{naprawBounds()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wielokat.\+napraw\+Bounds (\begin{DoxyParamCaption}\item[{int}]{xpoints\mbox{[}$\,$\mbox{]},  }\item[{int}]{ypoints\mbox{[}$\,$\mbox{]},  }\item[{int}]{npoints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Aktualizuje prostokąt okalający wielokąt. 
+\begin{DoxyParams}{Parameters}
+{\em xpoints} & tablica wartości odciętych punktów wielokąta\mbox{\hyperlink{}{xpoints}} \\
+\hline
+{\em ypoints} & tablica wartości rzędnych punktów wielokąta \mbox{\hyperlink{}{ypoints}} \\
+\hline
+{\em npoints} & liczba punktów wielokąta\mbox{\hyperlink{}{npoints}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_a565dc0340d5329d74e5f1f7d0eed1049}\label{classlista__5_1_1_wielokat_a565dc0340d5329d74e5f1f7d0eed1049}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!przesun@{przesun}}
+\index{przesun@{przesun}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{przesun()}{przesun()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wielokat.\+przesun (\begin{DoxyParamCaption}\item[{int}]{dx,  }\item[{int}]{dy }\end{DoxyParamCaption})}
+
+Zmienia położenie figury. 
+\begin{DoxyParams}{Parameters}
+{\em dx} & zmiana położenia względem osi x, o którą należy przesunąć figurę \\
+\hline
+{\em dy} & zmiana położenia względem osi y, o którą należy przesunąć figurę\\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a72f085618cf604e8b1632ea733043861}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_aca4b29bcec579f442ac566ec3be96d84}\label{classlista__5_1_1_wielokat_aca4b29bcec579f442ac566ec3be96d84}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!rysuj@{rysuj}}
+\index{rysuj@{rysuj}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{rysuj()}{rysuj()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wielokat.\+rysuj (\begin{DoxyParamCaption}\item[{Point}]{d }\end{DoxyParamCaption})}
+
+Zmienia właściwości figury podczas jej tworzenia i rysowania; 
+\begin{DoxyParams}{Parameters}
+{\em d} & nowy
+\begin{DoxyCode}
+Point 
+\end{DoxyCode}
+ , który zmienia kształt figury\\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a1b238957bac675c57febc970067dfd6d}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_a8498454fc73a25ba038d48e04bb1e8c0}\label{classlista__5_1_1_wielokat_a8498454fc73a25ba038d48e04bb1e8c0}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!srednia\+Point@{srednia\+Point}}
+\index{srednia\+Point@{srednia\+Point}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{srednia\+Point()}{sredniaPoint()}}
+{\footnotesize\ttfamily Point2\+D.\+Double lista\+\_\+5.\+Wielokat.\+srednia\+Point (\begin{DoxyParamCaption}\item[{int}]{xpoints\mbox{[}$\,$\mbox{]},  }\item[{int}]{ypoints\mbox{[}$\,$\mbox{]},  }\item[{int}]{npoints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Oblicza środkowy punkt jako średnią arytmetyczną wszystkich punktów. 
+\begin{DoxyParams}{Parameters}
+{\em xpoints} & tablica wartości odciętych punktów wielokąta\mbox{\hyperlink{}{xpoints}} \\
+\hline
+{\em ypoints} & tablica wartości rzędnych punktów wielokąta \mbox{\hyperlink{}{ypoints}} \\
+\hline
+{\em npoints} & liczba punktów wielokąta\mbox{\hyperlink{}{npoints}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}
+Point 
+\end{DoxyCode}
+ , który traktujemy jako środek przy skalowaniu. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_a0c33c8213f6796d16aac592f2a961768}\label{classlista__5_1_1_wielokat_a0c33c8213f6796d16aac592f2a961768}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!ustaw\+Kolor@{ustaw\+Kolor}}
+\index{ustaw\+Kolor@{ustaw\+Kolor}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{ustaw\+Kolor()}{ustawKolor()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wielokat.\+ustaw\+Kolor (\begin{DoxyParamCaption}\item[{Graphics2D}]{g2d }\end{DoxyParamCaption})}
+
+Zmienia kolor grafiki na ten, który jest przechowywane w polu kolor. 
+\begin{DoxyParams}{Parameters}
+{\em g2d} & grafika używana w \mbox{\hyperlink{classlista__5_1_1_wnetrze_aa8676192e150a17230d72de122744a47}{Wnetrze\#paint\+Component}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacelista__5_1_1_figura_aeb0982dc44348dd1fde9266d9d476ed0}{zmien\+Kolor}}
+\end{DoxySeeAlso}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a3cc13bf7229b288d743be7903b3b61a4}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_a8427c86e5be650cbece5464eee1ac053}\label{classlista__5_1_1_wielokat_a8427c86e5be650cbece5464eee1ac053}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!ustaw\+Z\+Odczytu@{ustaw\+Z\+Odczytu}}
+\index{ustaw\+Z\+Odczytu@{ustaw\+Z\+Odczytu}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{ustaw\+Z\+Odczytu()}{ustawZOdczytu()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wielokat.\+ustaw\+Z\+Odczytu (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argumenty }\end{DoxyParamCaption})}
+
+Ustawia całą figurę korzystając z danych z pliku. 
+\begin{DoxyParams}{Parameters}
+{\em argumenty} & tablica danych z odczytu, zawiera informacje determinujące figurę\\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a75b72b51014348d839e1f2b81525f264}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_ad1df79cd3736bb0fcf3ba2252409f3f8}\label{classlista__5_1_1_wielokat_ad1df79cd3736bb0fcf3ba2252409f3f8}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!wypisz\+Dane@{wypisz\+Dane}}
+\index{wypisz\+Dane@{wypisz\+Dane}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{wypisz\+Dane()}{wypiszDane()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wielokat.\+wypisz\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Wypisuje dane związane z figurą w \mbox{\hyperlink{classlista__5_1_1_stopka_a8e8ef21758defd5b137e609b00d2f59e}{Stopka\#dane}} 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_aaddd90c61fd1632655cb031efafe1a7d}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_a6391ebe6bc42d42b6bd3041b1a6bd7bd}\label{classlista__5_1_1_wielokat_a6391ebe6bc42d42b6bd3041b1a6bd7bd}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!zapisz\+Dane@{zapisz\+Dane}}
+\index{zapisz\+Dane@{zapisz\+Dane}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{zapisz\+Dane()}{zapiszDane()}}
+{\footnotesize\ttfamily String lista\+\_\+5.\+Wielokat.\+zapisz\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Przygotowuje informacje o figurze do zapisania. \begin{DoxyReturn}{Returns}
+linia, która zostanie zapisana w pliku
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a9d60d64b495755a3e48a3eee549a728d}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_ae863735ff7b742c4703bc142455d34ce}\label{classlista__5_1_1_wielokat_ae863735ff7b742c4703bc142455d34ce}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!zmien\+Kolor@{zmien\+Kolor}}
+\index{zmien\+Kolor@{zmien\+Kolor}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{zmien\+Kolor()}{zmienKolor()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wielokat.\+zmien\+Kolor (\begin{DoxyParamCaption}\item[{Graphics2D}]{g2d,  }\item[{Color}]{kolor }\end{DoxyParamCaption})}
+
+Aktualizuje pole kolor obecne w każdej figurze. 
+\begin{DoxyParams}{Parameters}
+{\em g2d} & grafika używana w \mbox{\hyperlink{classlista__5_1_1_wnetrze_aa8676192e150a17230d72de122744a47}{Wnetrze\#paint\+Component}} \\
+\hline
+{\em kolor} & pożądany kolor \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacelista__5_1_1_figura_a3cc13bf7229b288d743be7903b3b61a4}{ustaw\+Kolor}}
+\end{DoxySeeAlso}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_aeb0982dc44348dd1fde9266d9d476ed0}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_a17cfc98331e2a135886070a4094ac0e6}\label{classlista__5_1_1_wielokat_a17cfc98331e2a135886070a4094ac0e6}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!zwieksz@{zwieksz}}
+\index{zwieksz@{zwieksz}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{zwieksz()}{zwieksz()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Wielokat.\+zwieksz (\begin{DoxyParamCaption}\item[{int}]{zwiekszenie }\end{DoxyParamCaption})}
+
+Powiększa rozmiary figury. 
+\begin{DoxyParams}{Parameters}
+{\em zwiekszenie} & wartość, o którą należy zwiększyć figurę przy skalowaniu\\
+\hline
+\end{DoxyParams}
+, pamiętając o wartościach minimalnych. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classlista__5_1_1_wielokat_a362cfa49edf4875e534bb1f95a59e7af}{min\+\_\+width}} 
+
+\mbox{\hyperlink{classlista__5_1_1_wielokat_a0aa7a67f7c10f26e3bf9f4444e5ecb65}{min\+\_\+height}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a6813d7ac31e5118bcb34b9b29868ce5f}{lista\+\_\+5.\+Figura}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_wielokat_a6804efa88b78068f50c71ba760dcccc5}\label{classlista__5_1_1_wielokat_a6804efa88b78068f50c71ba760dcccc5}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!kolor@{kolor}}
+\index{kolor@{kolor}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{kolor}{kolor}}
+{\footnotesize\ttfamily Color lista\+\_\+5.\+Wielokat.\+kolor = Color.\+C\+Y\+AN\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+Color 
+\end{DoxyCode}
+ , domyślnie ustawiony na
+\begin{DoxyCode}
+Color.ORANGE 
+\end{DoxyCode}
+ \mbox{\Hypertarget{classlista__5_1_1_wielokat_a0aa7a67f7c10f26e3bf9f4444e5ecb65}\label{classlista__5_1_1_wielokat_a0aa7a67f7c10f26e3bf9f4444e5ecb65}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!min\+\_\+height@{min\+\_\+height}}
+\index{min\+\_\+height@{min\+\_\+height}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{min\+\_\+height}{min\_height}}
+{\footnotesize\ttfamily final int lista\+\_\+5.\+Wielokat.\+min\+\_\+height = 70\hspace{0.3cm}{\ttfamily [private]}}
+
+Minimalna wysokość, która jest nieprzekraczalna przy zmniejszaniu. \mbox{\Hypertarget{classlista__5_1_1_wielokat_a362cfa49edf4875e534bb1f95a59e7af}\label{classlista__5_1_1_wielokat_a362cfa49edf4875e534bb1f95a59e7af}} 
+\index{lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}!min\+\_\+width@{min\+\_\+width}}
+\index{min\+\_\+width@{min\+\_\+width}!lista\+\_\+5\+::\+Wielokat@{lista\+\_\+5\+::\+Wielokat}}
+\subsubsection{\texorpdfstring{min\+\_\+width}{min\_width}}
+{\footnotesize\ttfamily final int lista\+\_\+5.\+Wielokat.\+min\+\_\+width = 70\hspace{0.3cm}{\ttfamily [private]}}
+
+Minimalna szerokość, która jest nieprzekraczalna przy zmniejszaniu. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lista\+\_\+5/\mbox{\hyperlink{_wielokat_8java}{Wielokat.\+java}}\end{DoxyCompactItemize}

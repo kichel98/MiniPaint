@@ -1,0 +1,247 @@
+\hypertarget{classlista__5_1_1_prostokat}{}\section{lista\+\_\+5.\+Prostokat Class Reference}
+\label{classlista__5_1_1_prostokat}\index{lista\+\_\+5.\+Prostokat@{lista\+\_\+5.\+Prostokat}}
+Inheritance diagram for lista\+\_\+5.\+Prostokat\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classlista__5_1_1_prostokat}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlista__5_1_1_prostokat_acc8c546649b600148d733120799f0df6}{Prostokat}} (Point d)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_prostokat_a63b2bb7a2b3fd86e21d0d125f4262f39}{rysuj}} (Point zmienny)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_prostokat_a9e8a5112287441debbfe24165a24d322}{przesun}} (int dx, int dy)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_prostokat_acc961816d5fba86f3442ca34059492f5}{zwieksz}} (int zwiekszenie)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_prostokat_a95b9ce7b2a7b095c43ffc843cfeff39a}{wypisz\+Dane}} ()
+\item 
+String \mbox{\hyperlink{classlista__5_1_1_prostokat_a9537add38b8302420692068fb36726b5}{zapisz\+Dane}} ()
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_prostokat_a93ae9f652ca00886c05be661b17a0886}{ustaw\+Z\+Odczytu}} (String\mbox{[}$\,$\mbox{]} argumenty)
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_prostokat_aa776fbd55cc88f2bb8b8a202109e77ce}{zmien\+Kolor}} (Graphics2D g2d, Color \mbox{\hyperlink{classlista__5_1_1_prostokat_ad4564e93752646ac3267d2f559c25907}{kolor}})
+\item 
+void \mbox{\hyperlink{classlista__5_1_1_prostokat_ad63e4a8c7f291a54f8c9c285c8e6c8ff}{ustaw\+Kolor}} (Graphics2D g2d)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Point \mbox{\hyperlink{classlista__5_1_1_prostokat_adde334d6e8c665362e02745b04bec40d}{wyjsciowy}}
+\item 
+Color \mbox{\hyperlink{classlista__5_1_1_prostokat_ad4564e93752646ac3267d2f559c25907}{kolor}} = Color.\+O\+R\+A\+N\+GE
+\item 
+final int \mbox{\hyperlink{classlista__5_1_1_prostokat_a091fff7a1557fe594f834863d888be0c}{min\+\_\+width}} = 20
+\item 
+final int \mbox{\hyperlink{classlista__5_1_1_prostokat_acf9d581dee47e46a8139bda38d1993d6}{min\+\_\+height}} = 20
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa reprezentująca prostokąt. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacelista__5_1_1_figura}{Figura}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_prostokat_acc8c546649b600148d733120799f0df6}\label{classlista__5_1_1_prostokat_acc8c546649b600148d733120799f0df6}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!Prostokat@{Prostokat}}
+\index{Prostokat@{Prostokat}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{Prostokat()}{Prostokat()}}
+{\footnotesize\ttfamily lista\+\_\+5.\+Prostokat.\+Prostokat (\begin{DoxyParamCaption}\item[{Point}]{d }\end{DoxyParamCaption})}
+
+Tworzy \mbox{\hyperlink{classlista__5_1_1_prostokat}{Prostokat}}, ustalając współrzędne punktu wyjsciowego. 
+\begin{DoxyParams}{Parameters}
+{\em d} & punkt wyjściowy \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classlista__5_1_1_prostokat_adde334d6e8c665362e02745b04bec40d}{wyjsciowy}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_prostokat_a9e8a5112287441debbfe24165a24d322}\label{classlista__5_1_1_prostokat_a9e8a5112287441debbfe24165a24d322}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!przesun@{przesun}}
+\index{przesun@{przesun}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{przesun()}{przesun()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Prostokat.\+przesun (\begin{DoxyParamCaption}\item[{int}]{dx,  }\item[{int}]{dy }\end{DoxyParamCaption})}
+
+Zmienia położenie figury. 
+\begin{DoxyParams}{Parameters}
+{\em dx} & zmiana położenia względem osi x, o którą należy przesunąć figurę \\
+\hline
+{\em dy} & zmiana położenia względem osi y, o którą należy przesunąć figurę\\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a72f085618cf604e8b1632ea733043861}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_prostokat_a63b2bb7a2b3fd86e21d0d125f4262f39}\label{classlista__5_1_1_prostokat_a63b2bb7a2b3fd86e21d0d125f4262f39}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!rysuj@{rysuj}}
+\index{rysuj@{rysuj}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{rysuj()}{rysuj()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Prostokat.\+rysuj (\begin{DoxyParamCaption}\item[{Point}]{zmienny }\end{DoxyParamCaption})}
+
+Zmienia właściwości figury podczas jej tworzenia i rysowania; 
+\begin{DoxyParams}{Parameters}
+{\em d} & nowy
+\begin{DoxyCode}
+Point 
+\end{DoxyCode}
+ , który zmienia kształt figury\\
+\hline
+\end{DoxyParams}
+ 
+\begin{DoxyParams}{Parameters}
+{\em zmienny} & prawy dolny róg prostokąta \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a1b238957bac675c57febc970067dfd6d}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_prostokat_ad63e4a8c7f291a54f8c9c285c8e6c8ff}\label{classlista__5_1_1_prostokat_ad63e4a8c7f291a54f8c9c285c8e6c8ff}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!ustaw\+Kolor@{ustaw\+Kolor}}
+\index{ustaw\+Kolor@{ustaw\+Kolor}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{ustaw\+Kolor()}{ustawKolor()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Prostokat.\+ustaw\+Kolor (\begin{DoxyParamCaption}\item[{Graphics2D}]{g2d }\end{DoxyParamCaption})}
+
+Zmienia kolor grafiki na ten, który jest przechowywane w polu kolor. 
+\begin{DoxyParams}{Parameters}
+{\em g2d} & grafika używana w \mbox{\hyperlink{classlista__5_1_1_wnetrze_aa8676192e150a17230d72de122744a47}{Wnetrze\#paint\+Component}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacelista__5_1_1_figura_aeb0982dc44348dd1fde9266d9d476ed0}{zmien\+Kolor}}
+\end{DoxySeeAlso}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a3cc13bf7229b288d743be7903b3b61a4}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_prostokat_a93ae9f652ca00886c05be661b17a0886}\label{classlista__5_1_1_prostokat_a93ae9f652ca00886c05be661b17a0886}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!ustaw\+Z\+Odczytu@{ustaw\+Z\+Odczytu}}
+\index{ustaw\+Z\+Odczytu@{ustaw\+Z\+Odczytu}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{ustaw\+Z\+Odczytu()}{ustawZOdczytu()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Prostokat.\+ustaw\+Z\+Odczytu (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{argumenty }\end{DoxyParamCaption})}
+
+Ustawia całą figurę korzystając z danych z pliku. 
+\begin{DoxyParams}{Parameters}
+{\em argumenty} & tablica danych z odczytu, zawiera informacje determinujące figurę\\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a75b72b51014348d839e1f2b81525f264}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_prostokat_a95b9ce7b2a7b095c43ffc843cfeff39a}\label{classlista__5_1_1_prostokat_a95b9ce7b2a7b095c43ffc843cfeff39a}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!wypisz\+Dane@{wypisz\+Dane}}
+\index{wypisz\+Dane@{wypisz\+Dane}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{wypisz\+Dane()}{wypiszDane()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Prostokat.\+wypisz\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Wypisuje dane związane z figurą w \mbox{\hyperlink{classlista__5_1_1_stopka_a8e8ef21758defd5b137e609b00d2f59e}{Stopka\#dane}} 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_aaddd90c61fd1632655cb031efafe1a7d}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_prostokat_a9537add38b8302420692068fb36726b5}\label{classlista__5_1_1_prostokat_a9537add38b8302420692068fb36726b5}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!zapisz\+Dane@{zapisz\+Dane}}
+\index{zapisz\+Dane@{zapisz\+Dane}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{zapisz\+Dane()}{zapiszDane()}}
+{\footnotesize\ttfamily String lista\+\_\+5.\+Prostokat.\+zapisz\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Przygotowuje informacje o figurze do zapisania. \begin{DoxyReturn}{Returns}
+linia, która zostanie zapisana w pliku
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a9d60d64b495755a3e48a3eee549a728d}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_prostokat_aa776fbd55cc88f2bb8b8a202109e77ce}\label{classlista__5_1_1_prostokat_aa776fbd55cc88f2bb8b8a202109e77ce}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!zmien\+Kolor@{zmien\+Kolor}}
+\index{zmien\+Kolor@{zmien\+Kolor}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{zmien\+Kolor()}{zmienKolor()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Prostokat.\+zmien\+Kolor (\begin{DoxyParamCaption}\item[{Graphics2D}]{g2d,  }\item[{Color}]{kolor }\end{DoxyParamCaption})}
+
+Aktualizuje pole kolor obecne w każdej figurze. 
+\begin{DoxyParams}{Parameters}
+{\em g2d} & grafika używana w \mbox{\hyperlink{classlista__5_1_1_wnetrze_aa8676192e150a17230d72de122744a47}{Wnetrze\#paint\+Component}} \\
+\hline
+{\em kolor} & pożądany kolor \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacelista__5_1_1_figura_a3cc13bf7229b288d743be7903b3b61a4}{ustaw\+Kolor}}
+\end{DoxySeeAlso}
+ 
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_aeb0982dc44348dd1fde9266d9d476ed0}{lista\+\_\+5.\+Figura}}.
+
+\mbox{\Hypertarget{classlista__5_1_1_prostokat_acc961816d5fba86f3442ca34059492f5}\label{classlista__5_1_1_prostokat_acc961816d5fba86f3442ca34059492f5}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!zwieksz@{zwieksz}}
+\index{zwieksz@{zwieksz}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{zwieksz()}{zwieksz()}}
+{\footnotesize\ttfamily void lista\+\_\+5.\+Prostokat.\+zwieksz (\begin{DoxyParamCaption}\item[{int}]{zwiekszenie }\end{DoxyParamCaption})}
+
+Powiększa rozmiary figury. 
+\begin{DoxyParams}{Parameters}
+{\em zwiekszenie} & wartość, o którą należy zwiększyć figurę przy skalowaniu\\
+\hline
+\end{DoxyParams}
+, pamiętając o wartościach minimalnych. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classlista__5_1_1_prostokat_a091fff7a1557fe594f834863d888be0c}{min\+\_\+width}} 
+
+\mbox{\hyperlink{classlista__5_1_1_prostokat_acf9d581dee47e46a8139bda38d1993d6}{min\+\_\+height}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacelista__5_1_1_figura_a6813d7ac31e5118bcb34b9b29868ce5f}{lista\+\_\+5.\+Figura}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classlista__5_1_1_prostokat_ad4564e93752646ac3267d2f559c25907}\label{classlista__5_1_1_prostokat_ad4564e93752646ac3267d2f559c25907}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!kolor@{kolor}}
+\index{kolor@{kolor}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{kolor}{kolor}}
+{\footnotesize\ttfamily Color lista\+\_\+5.\+Prostokat.\+kolor = Color.\+O\+R\+A\+N\+GE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+Color 
+\end{DoxyCode}
+ , domyślnie ustawiony na
+\begin{DoxyCode}
+Color.ORANGE 
+\end{DoxyCode}
+ \mbox{\Hypertarget{classlista__5_1_1_prostokat_acf9d581dee47e46a8139bda38d1993d6}\label{classlista__5_1_1_prostokat_acf9d581dee47e46a8139bda38d1993d6}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!min\+\_\+height@{min\+\_\+height}}
+\index{min\+\_\+height@{min\+\_\+height}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{min\+\_\+height}{min\_height}}
+{\footnotesize\ttfamily final int lista\+\_\+5.\+Prostokat.\+min\+\_\+height = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+Minimalna wysokość, która jest nieprzekraczalna przy zmniejszaniu. \mbox{\Hypertarget{classlista__5_1_1_prostokat_a091fff7a1557fe594f834863d888be0c}\label{classlista__5_1_1_prostokat_a091fff7a1557fe594f834863d888be0c}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!min\+\_\+width@{min\+\_\+width}}
+\index{min\+\_\+width@{min\+\_\+width}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{min\+\_\+width}{min\_width}}
+{\footnotesize\ttfamily final int lista\+\_\+5.\+Prostokat.\+min\+\_\+width = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+Minimalna szerokość, która jest nieprzekraczalna przy zmniejszaniu. \mbox{\Hypertarget{classlista__5_1_1_prostokat_adde334d6e8c665362e02745b04bec40d}\label{classlista__5_1_1_prostokat_adde334d6e8c665362e02745b04bec40d}} 
+\index{lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}!wyjsciowy@{wyjsciowy}}
+\index{wyjsciowy@{wyjsciowy}!lista\+\_\+5\+::\+Prostokat@{lista\+\_\+5\+::\+Prostokat}}
+\subsubsection{\texorpdfstring{wyjsciowy}{wyjsciowy}}
+{\footnotesize\ttfamily Point lista\+\_\+5.\+Prostokat.\+wyjsciowy\hspace{0.3cm}{\ttfamily [private]}}
+
+wyjsciowy
+\begin{DoxyCode}
+Point 
+\end{DoxyCode}
+ , lewy górny róg prostokąta, niezmienny przy rysowaniu 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lista\+\_\+5/\mbox{\hyperlink{_prostokat_8java}{Prostokat.\+java}}\end{DoxyCompactItemize}
